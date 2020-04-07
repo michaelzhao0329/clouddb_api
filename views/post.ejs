@@ -1,0 +1,11 @@
+<%- include('partials/header'); -%>
+
+<div class="box">
+    <% storedPost.forEach(function(element){ %>
+      <div class="item">
+        <h1><%-element.title%> <br> </h1>
+        <p><%-element.content%> <br> </p>
+      </div>
+    <% }) %>
+
+  <%- include('partials/footer'); -%>
